@@ -3,110 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crafting Bytes - Mobile App Development</title>
-    <meta name="description" content="Crafting Bytes develops innovative mobile applications with a focus on security and user experience.">
-    <meta name="keywords" content="mobile apps, iOS, Android, app development, secure apps">
+    <title>Crafting Bytes — Apps built with craft.</title>
+    <meta name="description" content="Crafting Bytes designs and builds mobile experiences people love. Privacy-first, security-focused, independently made.">
+    <meta name="keywords" content="mobile apps, iOS, app development, secure apps, indie developer">
     <meta name="author" content="Crafting Bytes">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <h1 class="logo">Crafting Bytes</h1>
-            <p class="tagline">Crafting innovative mobile experiences</p>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="nav-logo">Crafting Bytes</a>
+        <ul class="nav-links">
+            <li><a href="#apps">Apps</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Mobile App Studio</div>
+            <h1>Apps built with craft.</h1>
+            <p class="hero-sub">We design and build mobile experiences people love.</p>
+            <a href="#apps" class="btn btn-primary">See Our Apps</a>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section class="featured-app">
-            <div class="container">
-                <h2>Our Featured App</h2>
-                <div class="app-showcase">
-                    <div class="app-info">
-                        <h3>Meelu Crypto Asset Manager</h3>
-                        <p>Securely track your crypto portfolio across multiple exchanges. Private keys never leave your device.</p>
-                        <div class="app-features">
-                            <div class="feature">
-                                <h4>🔒 Secure by Design</h4>
-                                <p>Uses Apple Keychain technology for maximum security</p>
-                            </div>
-                            <div class="feature">
-                                <h4>📊 Multi-Exchange Support</h4>
-                                <p>Track assets across all major exchanges</p>
-                            </div>
-                            <div class="feature">
-                                <h4>⚡ Fast & Intuitive</h4>
-                                <p>Quick coin search and flexible viewing options</p>
-                            </div>
-                        </div>
-                        <div class="app-links">
-                            <a href="https://meeluapp.com/" class="btn btn-primary" target="_blank">Learn More</a>
-                            <a href="https://apps.apple.com/us/app/meelu-crypto-asset-manager/id6741737162" class="btn btn-secondary" target="_blank">Download on App Store</a>
-                            <a href="privacy-policy.html" class="btn btn-privacy">Privacy Policy</a>
-                        </div>
+    <!-- Apps -->
+    <section id="apps">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Our Work</div>
+                <h2 class="section-title">Our Apps</h2>
+            </div>
+            <div class="apps-grid">
+
+                <!-- Meelu -->
+                <div class="app-card">
+                    <div class="app-card-header">
+                        <div class="app-name">Meelu</div>
+                        <div class="app-tagline">Crypto Asset Manager</div>
+                    </div>
+                    <p class="app-description">Securely track your crypto portfolio across multiple exchanges. Private keys never leave your device — everything stays local, encrypted, and under your control.</p>
+                    <div class="app-pills">
+                        <span class="pill">🔒 Secure by Design</span>
+                        <span class="pill">📊 Multi-Exchange</span>
+                        <span class="pill">⚡ Fast & Intuitive</span>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://meeluapp.com/" class="btn btn-primary" target="_blank" rel="noopener">Learn More</a>
+                        <a href="https://apps.apple.com/us/app/meelu-crypto-asset-manager/id6741737162" class="btn btn-ghost" target="_blank" rel="noopener">App Store</a>
+                        <a href="meelu-privacy.html" class="btn btn-link">Privacy Policy</a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="about">
-            <div class="container">
-                <h2>About Crafting Bytes</h2>
-                <p>We specialize in creating secure, user-friendly mobile applications that prioritize privacy and performance. Our apps are built with cutting-edge technology and a deep commitment to protecting user data.</p>
-                
-                <div class="principles">
-                    <div class="principle">
-                        <h3>Privacy First</h3>
-                        <p>Your data stays on your device. We never collect, store, or share personal information.</p>
+                <!-- Mindzy -->
+                <div class="app-card">
+                    <div class="app-card-header">
+                        <div class="coming-soon-badge">Coming Soon</div>
+                        <div class="app-name">Mindzy</div>
+                        <div class="app-tagline">Learn something new every day.</div>
                     </div>
-                    <div class="principle">
-                        <h3>Security Focused</h3>
-                        <p>Built with industry-standard security practices and regular security audits.</p>
+                    <p class="app-description">An enjoyable quiz gaming app that makes daily learning fun and rewarding. Build knowledge one question at a time.</p>
+                    <div class="app-pills">
+                        <span class="pill">🧠 Daily Quizzes</span>
+                        <span class="pill">🎮 Game-like Experience</span>
+                        <span class="pill">📚 Grow Your Knowledge</span>
                     </div>
-                    <div class="principle">
-                        <h3>User Experience</h3>
-                        <p>Intuitive design that makes complex tasks simple and enjoyable.</p>
+                    <div class="app-actions">
+                        <span class="btn btn-muted">Coming Soon</span>
+                        <a href="mindzy-privacy.html" class="btn btn-link">Privacy Policy</a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="contact">
-            <div class="container">
-                <h2>Get in Touch</h2>
-                <p>Have questions or feedback? We'd love to hear from you.</p>
-                <div class="contact-info">
-                    <p>Email: <a href="mailto:contact@craftingbytes.eu">contact@craftingbytes.eu</a></p>
-                    <p>Support: <a href="mailto:support@craftingbytes.eu">support@craftingbytes.eu</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Our Principles</div>
+                <h2 class="section-title">How we build</h2>
+            </div>
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <span class="principle-icon">🔐</span>
+                    <div class="principle-title">Privacy First</div>
+                    <p class="principle-text">Each app has its own clear privacy policy. We build for minimal data footprint by design.</p>
+                </div>
+                <div class="principle-card">
+                    <span class="principle-icon">🛡️</span>
+                    <div class="principle-title">Security Focused</div>
+                    <p class="principle-text">Built with industry-standard security practices and regular security audits.</p>
+                </div>
+                <div class="principle-card">
+                    <span class="principle-icon">🎯</span>
+                    <div class="principle-title">Independent &amp; Focused</div>
+                    <p class="principle-text">Small team, big standards. We obsess over quality so you don't have to think about it.</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Get in Touch</div>
+                <h2 class="section-title">Say hello</h2>
+            </div>
+            <p class="contact-description">Have questions or feedback? We'd love to hear from you.</p>
+            <div class="contact-links">
+                <a href="mailto:contact@craftingbytes.eu" class="contact-link">
+                    <div>
+                        <div class="contact-link-label">General</div>
+                        <div class="contact-link-value">contact@craftingbytes.eu</div>
+                    </div>
+                </a>
+                <a href="mailto:support@craftingbytes.eu" class="contact-link">
+                    <div>
+                        <div class="contact-link-label">Support</div>
+                        <div class="contact-link-value">support@craftingbytes.eu</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Crafting Bytes</h4>
-                    <p>Building the future of mobile apps</p>
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">Crafting Bytes</a>
+                    <p>Crafting innovative mobile experiences, one app at a time.</p>
                 </div>
-                <div class="footer-section">
+                <div class="footer-col">
                     <h4>Legal</h4>
                     <ul>
+                        <li><a href="privacy-policy.html">Privacy Policies</a></li>
+                        <li><a href="meelu-privacy.html">Meelu Privacy</a></li>
+                        <li><a href="mindzy-privacy.html">Mindzy Privacy</a></li>
                         <li><a href="mailto:contact@craftingbytes.eu">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-col">
                     <h4>Apps</h4>
                     <ul>
-                        <li><a href="https://meeluapp.com/" target="_blank">Meelu Crypto Manager</a></li>
+                        <li><a href="https://meeluapp.com/" target="_blank" rel="noopener">Meelu</a></li>
+                        <li><a href="#apps">Mindzy</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Crafting Bytes. All rights reserved.</p>
+                <p>&copy; 2025 Crafting Bytes. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
 </body>
 </html>
