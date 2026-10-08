@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WealthSnap Privacy Policy — Crafting Bytes</title>
-    <meta name="description" content="Privacy Policy for the WealthSnap net worth tracker by Crafting Bytes. No bank linking, no analytics, your financial data stays on your device.">
+    <meta name="description" content="Privacy Policy for the WealthSnap net worth tracker by Crafting Bytes. No bank linking, no analytics, and we never see your financial data.">
     <link rel="canonical" href="https://craftingbytes.eu/wealthsnap-privacy.html">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <meta name="theme-color" content="#0a0a0f">
@@ -42,14 +42,14 @@
     </div>
 
     <div class="privacy-body">
-        <div class="last-updated">Last updated: September 2026</div>
+        <div class="last-updated">Last updated: October 2026</div>
 
         <div class="privacy-section">
             <h2>1. Introduction</h2>
             <p>At Crafting Bytes, we are committed to protecting your privacy. This Privacy Policy explains how
                 WealthSnap — our net worth tracker — handles your information. WealthSnap deals with some of the most
                 sensitive data a person has, so the design principle is simple: your financial data stays on your
-                device, and we never see it.</p>
+                device and, if you turn on sync, in your own iCloud account. We never see it.</p>
         </div>
 
         <div class="privacy-section">
@@ -74,6 +74,9 @@
                 <li>Transactions, cost basis, and any documents or notes you attach</li>
                 <li>Net worth snapshots and the history they build up over time</li>
                 <li>Your settings, chosen theme, display currency, and app preferences</li>
+                <li>Safety backups: copies of your data that the app writes on your device before a change that could
+                    replace it, such as a choice between the data on this device and the data in iCloud. They let you
+                    restore the earlier state, and they are never sent to us.</li>
             </ul>
             <p>Deleting the app removes this data from your device. If you have enabled iCloud sync, see section 4 for
                 how to remove the synced copy as well.</p>
@@ -99,8 +102,9 @@
 
         <div class="privacy-section">
             <h2>5. What Our Servers Receive</h2>
-            <p>To show live prices and exchange rates, the app asks our service for market data. Those requests are
-                deliberately narrow, and they never contain your financial information:</p>
+            <p>To show live prices and exchange rates, the app asks our service for market data, and it can report
+                errors to the same service. What it sends is deliberately narrow and never contains your financial
+                information:</p>
             <ul>
                 <li><strong>Market Data Queries:</strong> A request contains only what is needed to look up a price —
                     for example a cryptocurrency identifier, a stock symbol, or a currency pair. It never includes how
@@ -108,8 +112,16 @@
                 <li><strong>An Anonymous Install Tag:</strong> Each installation generates a random twelve-character
                     identifier the first time it is needed. It is not derived from you, your device, or your Apple
                     Account, it is never combined with your financial data, and reinstalling the app replaces it with a
-                    new one. We use it only to understand how much data-provider capacity an installation consumes so we
-                    can size and pay for the service.</li>
+                    new one. We use it to understand how much data-provider capacity an installation consumes so we
+                    can size and pay for the service, and to group the error reports described below.</li>
+                <li><strong>Error Reports:</strong> When something fails inside the app, for example a file that cannot
+                    be saved or a sync step that does not complete, the app can send us a short error report. A report
+                    contains a fixed description of the failure, the place in our code where it occurred, its
+                    severity, the technical error type and code, the app version and build, the iOS version, and the
+                    time. It is sent with the anonymous install tag, so the reports of one installation are linked to
+                    each other. A report never contains your balances, amounts, account or institution names,
+                    transactions, or notes, and we cannot connect the install tag to your identity. We use these
+                    reports only to find and fix defects.</li>
                 <li><strong>Standard Connection Information:</strong> As with any internet request, our infrastructure
                     provider processes the network information necessary to deliver a response, such as your IP address.
                     We do not use it to build a profile of you.</li>
@@ -117,8 +129,11 @@
                     app, which stops third parties from abusing our data allowance. The token identifies the app
                     installation, not you.</li>
             </ul>
-            <p>Because the app talks only to our service and never directly to the underlying market-data providers,
-                those providers do not receive your IP address or any information about you.</p>
+            <p>The app requests prices, exchange rates, and market history only from our service and never directly
+                from the underlying market-data providers, so those providers do not receive your IP address or any
+                information about you. There is one exception: cryptocurrency logo images load directly from
+                CoinMarketCap's image servers, which receive your IP address and the identifier of the coin whose logo
+                is shown, as with any image on the web.</p>
         </div>
 
         <div class="privacy-section">
@@ -126,11 +141,15 @@
             <p>WealthSnap offers an optional PRO subscription. Purchases are processed by Apple through the App Store —
                 we never see or handle your payment details.</p>
             <ul>
-                <li>Subscription status is managed through a third-party subscription service, which assigns your
-                    installation an anonymous identifier so your purchase can be restored on your devices.</li>
+                <li>Subscription status is managed through RevenueCat, a subscription service. It assigns your
+                    installation an anonymous identifier and receives the App Store purchase records for that
+                    identifier, so the app knows whether PRO is active and can restore your purchase.</li>
                 <li>We do not receive your name, email address, or payment method from Apple.</li>
-                <li>Your subscription status is not linked to your financial data, which never leaves your device.</li>
+                <li>Your subscription status is not linked to your financial data, which RevenueCat never
+                    receives.</li>
             </ul>
+            <p>Data handled by RevenueCat is subject to <a href="https://www.revenuecat.com/privacy"
+                    target="_blank" rel="noopener" style="color: #6366f1;">RevenueCat's Privacy Policy</a>.</p>
         </div>
 
         <div class="privacy-section">
@@ -139,7 +158,9 @@
             <ul>
                 <li><strong>No Analytics:</strong> WealthSnap contains no analytics or product-usage tracking SDK. We do
                     not record which screens you open or what you tap.</li>
-                <li><strong>No Crash Reporting:</strong> The app sends no automatic crash or diagnostic reports to us.</li>
+                <li><strong>No Third-Party Crash Reporting:</strong> The app contains no crash-reporting SDK. The only
+                    diagnostic data it sends is the error reports described in section 5, and they go to our own
+                    service.</li>
                 <li><strong>No Advertising:</strong> No ads, no ad networks, and no advertising identifiers.</li>
                 <li><strong>No Selling or Sharing:</strong> We do not sell, rent, or share your data with anyone, and
                     there is no financial data on our side to sell in the first place.</li>
@@ -148,20 +169,25 @@
 
         <div class="privacy-section">
             <h2>8. Third-Party Services</h2>
-            <p>WealthSnap relies on a small number of external services. None of them receives your financial data:</p>
+            <p>WealthSnap relies on a small number of external services. None of them receives your financial data in a
+                form it can read:</p>
             <ul>
                 <li><strong>Apple (iCloud &amp; App Store):</strong> Optional sync into your own private iCloud database,
                     and processing of subscription purchases.</li>
-                <li><strong>Our Market Data Service:</strong> Hosted on a content delivery network, it fetches prices and
-                    exchange rates on the app's behalf so that data providers never see your device.</li>
+                <li><strong>Our Service:</strong> Hosted on Cloudflare, it fetches prices and exchange rates on the app's
+                    behalf so that data providers never see your device, and it stores the error reports described in
+                    section 5.</li>
                 <li><strong>App Attestation and Remote Configuration:</strong> Google Firebase App Check verifies that
                     requests come from a genuine app installation, and Firebase Remote Config lets us adjust app settings
-                    without shipping an update. Firebase Analytics and Crashlytics are not part of the app.</li>
-                <li><strong>Subscription Management:</strong> A third-party service that records entitlement status
-                    against an anonymous installation identifier.</li>
+                    without shipping an update. To do this, Firebase assigns the installation an identifier of its own.
+                    Firebase Analytics and Crashlytics are not part of the app.</li>
+                <li><strong>Subscription Management:</strong> RevenueCat records entitlement status against an anonymous
+                    installation identifier.</li>
                 <li><strong>Market Data Providers:</strong> Prices, exchange rates, and market history come from
-                    third-party financial data providers. The app credits its current sources in-app, and requests reach
-                    them only through our service.</li>
+                    third-party financial data providers. They are credited on the
+                    <a href="wealthsnap-data-sources.html" style="color: #6366f1;">WealthSnap Data Sources</a> page, and requests reach
+                    them only through our service, except for the cryptocurrency logo images described in section
+                    5.</li>
             </ul>
         </div>
 
@@ -175,7 +201,8 @@
                 <li><strong>No Credentials to Lose:</strong> Because WealthSnap never asks for bank, broker, or exchange
                     logins, there are no financial credentials stored anywhere for an attacker to obtain.</li>
                 <li><strong>Minimal Server Footprint:</strong> Our service holds no user accounts and no financial
-                    records, which keeps the consequences of any incident on our side limited by design.</li>
+                    records, only anonymous usage counts and error reports, which keeps the consequences of any
+                    incident on our side limited by design.</li>
             </ul>
         </div>
 
@@ -194,8 +221,9 @@
                 <li><strong>Access and Portability:</strong> You can export your full data set from within the app at any
                     time, in a portable format you can keep, back up, or move to another tool.</li>
                 <li><strong>Deletion:</strong> You can reset app data from within the app, and uninstalling removes the
-                    local copy. If iCloud sync was enabled, delete the app's iCloud data through iOS Settings as
-                    described in section 4.</li>
+                    local copy, including its safety backups. If iCloud sync was enabled, delete the app's iCloud data
+                    through iOS Settings as described in section 4. Reinstalling the app replaces the anonymous install
+                    tag, so later reports are not linked to earlier ones.</li>
                 <li><strong>Objection and Restriction:</strong> Turning off iCloud sync stops all syncing; declining or
                     cancelling a subscription stops all subscription processing.</li>
                 <li><strong>Enquiries:</strong> For any question about your rights under the GDPR, contact us using the
@@ -239,6 +267,7 @@
                     <ul>
                         <li><a href="privacy-policy.html">Privacy Policies</a></li>
                         <li><a href="wealthsnap-privacy.html">WealthSnap Privacy</a></li>
+                        <li><a href="wealthsnap-data-sources.html">WealthSnap Data Sources</a></li>
                         <li><a href="mindzy-privacy.html">Mindzy Privacy</a></li>
                         <li><a href="mailto:contact@craftingbytes.eu">Contact</a></li>
                     </ul>
