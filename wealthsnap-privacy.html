@@ -42,7 +42,7 @@
     </div>
 
     <div class="privacy-body">
-        <div class="last-updated">Last updated: October 2026</div>
+        <div class="last-updated">Last updated: November 2026</div>
 
         <div class="privacy-section">
             <h2>1. Introduction</h2>
@@ -125,6 +125,21 @@
                 <li><strong>Standard Connection Information:</strong> As with any internet request, our infrastructure
                     provider processes the network information necessary to deliver a response, such as your IP address.
                     We do not use it to build a profile of you.</li>
+                <li><strong>Price Alerts and Big Moves (PRO):</strong> If you set a price alert or keep big moves on,
+                    your iPhone registers with our own server so that it can tell you when an instrument's price reaches
+                    the limit price you set, or when an instrument moves a lot in one day. What leaves your iPhone is:
+                    the alert token Apple issues for this install, the anonymous install tag and your device's language;
+                    for each price alert, the instrument, whether you want to know when the price goes above or below
+                    your limit, and the limit price with its currency (for example "Bitcoin, above 100,000 USD"); and
+                    for big moves, a list of instruments, which may include ones you own (your largest holdings), with
+                    the time of the last alert for each. Nothing about your money leaves your iPhone: not how much of an
+                    instrument you own, no balance, no net worth, no account and no transaction. When you turn big moves
+                    or notifications off, the list is removed the next time WealthSnap reaches our server. To prevent
+                    the same alert twice, the server keeps a record of each big-move alert it sent and deletes it after
+                    about 4 days; for a price alert, it keeps the time of its last alert and the price at that moment
+                    until you delete that price alert. If you delete the app, the server removes your registration when
+                    Apple tells it that the app is no longer on your iPhone. We use this data for nothing but delivering
+                    your alerts.</li>
                 <li><strong>App Attestation:</strong> Requests carry a token proving they came from a genuine copy of the
                     app, which stops third parties from abusing our data allowance. The token identifies the app
                     installation, not you.</li>
@@ -172,10 +187,10 @@
             <p>WealthSnap relies on a small number of external services. None of them receives your financial data in a
                 form it can read:</p>
             <ul>
-                <li><strong>Apple (iCloud &amp; App Store):</strong> Optional sync into your own private iCloud database,
-                    and processing of subscription purchases.</li>
+                <li><strong>Apple (iCloud, App Store &amp; Notifications):</strong> Optional sync into your own private iCloud database,
+                    processing of subscription purchases, and delivery of price-alert and big-move notifications through the Apple Push Notification service.</li>
                 <li><strong>Our Service:</strong> Hosted on Cloudflare, it fetches prices and exchange rates on the app's
-                    behalf so that data providers never see your device, and it stores the error reports described in
+                    behalf so that data providers never see your device, and it stores the error reports and the price alerts and big-move lists described in
                     section 5.</li>
                 <li><strong>App Attestation and Remote Configuration:</strong> Google Firebase App Check verifies that
                     requests come from a genuine app installation, and Firebase Remote Config lets us adjust app settings
